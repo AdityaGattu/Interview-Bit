@@ -8,7 +8,7 @@ string Solution::longestCommonPrefix(vector<string> &A) {
     
     string temp;
     int i=0;
-    while(x!=0 || y!=0)
+    while(x!=0 && y!=0)
     {
         if(A[0][i]==A[A.size()-1][i])
         {
