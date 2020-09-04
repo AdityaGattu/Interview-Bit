@@ -26,7 +26,7 @@ int Solution::strStr(const string A, const string B) {
         }
         else
         {
-            temp_start=++start;
+            temp_start=++start;  // start+=1; and temp_start=start;
             j=0;
         }
         if(j==B.length()){return start;}
