@@ -33,3 +33,27 @@ int Solution::lengthOfLastWord(const string A) {
     
     return v[v.size()-1].length();
 }
+
+****************************************************************
+
+Sol 2: 
+
+int Solution::lengthOfLastWord(const string A) {
+    
+    int i=A.length()-1;
+    
+    while(A[i]==' ')
+    {
+        i--;
+    }
+    
+    int cnt=0;
+    for(;i>=0 && A[i]!=' ';i--)
+    {
+        cnt++;
+    }
+    
+    return cnt;
+}
+
+
